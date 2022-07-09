@@ -6,7 +6,7 @@
                 <div class="card-header">solicitar hora</div>
 
                 <div class="card-body">
-                    pendiente calendario
+                    pendiente añadir Calendario
 
                 </div>
             </div>
