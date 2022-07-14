@@ -1,64 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Sistema de Información y Agenda para Psicóloga (SIAP)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p align="center"><img src="https://i.ibb.co/0Fc8qJt/logo-transparente.png" alt="logo-transparente" width="250"></a></p>
 
-## About Laravel
+## Sobre el proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+El proyecto de memoria SIAP es desarrollado con intenciones de cumplir las falencias de una psicóloga que desea poseer un sistema de agenda online para llevar control de sus atenciones y que sus pacientes puedan solicitar horas sin la necesidad de esperar a poder contactarse con la profesional para agendar una atención.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalación
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Para obtener el proyecto se debe utilizar el comando git clone:
 
-## Learning Laravel
+- git clone https://github.com/davidgonzalezUCM/memoria
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Con esto crearemos una copia del repositorio en nuestro ordenador, en donde podremos realizar cambios a este proyecto.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Tecnologías y dependencias
 
-## Laravel Sponsors
+Antes de empezar la instalación de nuestras tecnologías para *backend* y *frontend* debemos instalar otros paquetes:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- [Composer](https://getcomposer.org)
+- [Node.js](https://nodejs.org/es/)
 
-### Premium Partners
+Debido a que en esta ocasión se asume que el proyecto será clonado, estas son todas las dependencias que debemos tener instaladas. **Composer** nos dejará trabajar con el *framework* **Laravel**, mientras que **Node.js** nos dará acceso tanto al gesto de paquetes **NPM** como a el *framework* **Vue.js**.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Estas son las versiones utilizadas en este proyecto:
 
-## Contributing
+- **Laravel:** 9.11
+- **Node.js:** 16.13.0
+- **NPM:** 6.14.17
+- **Vue.js:** 3.2.36
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Antes de montar
 
-## Code of Conduct
+Se debe mencionar que, al igual que muchas otras aplicaciones web, SIAP utiliza [Xampp](https://www.apachefriends.org/es/index.html) para montar sus servicios. Además, aprovechando este mismo servicio, utiliza una base de datos **MariaDB**.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Al momento de montar
 
-## Security Vulnerabilities
+Se debe tener en cuenta que al estar trabajando con 2 tecnologías, debemos utilizar los siguientes comandos:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- php artisan serve
+  
+Con este comando podemos montar SIAP, siempre y cuando **Xampp** tenga sus servicios activos.
 
-## License
+- npm run dev
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Con este comando podemos compilar todos los cambios que hayamos realizados en nuestras vistas de **Vue.js**.
